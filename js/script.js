@@ -75,5 +75,7 @@ startElement.addEventListener('click' , function(){
     //recupero valore pari o dispari
     const Userchoice = choiceElement.value;
 
-    
+    //recupero valore numerico inserito dall'utente
+    const UserNumber = parseInt(numberElement.value);
+    console.log(UserNumber);
 });
