@@ -10,21 +10,29 @@
     <title>PALI E DISPARI</title>
 </head>
 <body>
-    <div>
-        <input type="text" id="user-answer">
-        <button id="button">START</button>
-        <p id="user-result"></p>
+    <div id="palindroma" class="card">
+        <h1>Palindrom Word</h1>
+        <div>
+            <input type="text" id="user-answer">
+            <button id="button">START</button>
+            <p id="user-result">Responso:</p>
+        </div>
     </div>
 
-    <div>
-        <select name="" id="user-choice">
-            <option value="">--</option>
-            <option value="0">Pari</option>
-            <option value="1">Dispari</option>
-        </select>
-        <input type="number" id="number-user">
-        <button id="start-button">SFIDA LA SORTE</button>
-        <p id="result-test"></p>
+    <div id="EoO" class="card">
+        <h1>EVEN or ODD</h1>
+        <div>
+            <select name="" id="user-choice">
+                <option value="">--</option>
+                <option value="0">Pari</option>
+                <option value="1">Dispari</option>
+            </select>
+            <input type="number" id="number-user">
+        </div>
+        <div class="m-1">
+            <button id="start-button">SFIDA LA SORTE</button>
+        </div>
+        <p id="result-test">Responso:</p>
     </div>
     <!-- my javascript  -->
     <script src="js/script.js"></script>
