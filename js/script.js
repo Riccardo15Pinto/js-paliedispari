@@ -71,5 +71,9 @@ function getEvenOrOdd(a , b){
 
 //al click del bottone
 startElement.addEventListener('click' , function(){
+
+    //recupero valore pari o dispari
+    const Userchoice = choiceElement.value;
+
     
 });
