@@ -14,5 +14,7 @@ function getpalindromWord(word){
 
 //al click del bottone
 buttonElement.addEventListener('click', function(){
-    
+    //recupero il valore inserito dall'utente
+    const wordresult = resultElement.value.trim();
+    console.log(wordresult.length);
 });
