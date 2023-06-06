@@ -84,4 +84,8 @@ startElement.addEventListener('click' , function(){
         alert('Inserire un numero inferiore a 5');
         return
     }
+
+    //genero un numero random per la cpu
+    const cpuNumber = getRandomNumber();
+    console.log(cpuNumber);
 });
