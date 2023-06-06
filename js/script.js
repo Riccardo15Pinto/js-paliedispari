@@ -28,4 +28,7 @@ buttonElement.addEventListener('click', function(){
     //creo una variabile usando la funzione
     const revertwords = getpalindromWord(wordresult);
 
+    //creo una variabile d'appoggio
+    let result = 'La Parola non è Palindroma'
+
 });
