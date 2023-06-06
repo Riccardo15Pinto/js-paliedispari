@@ -88,4 +88,11 @@ startElement.addEventListener('click' , function(){
     //genero un numero random per la cpu
     const cpuNumber = getRandomNumber();
     console.log(cpuNumber);
+
+    //check
+    console.log(UserNumber + cpuNumber);
+
+    //creo una variabile sfruttando la funzione
+    const total = getEvenOrOdd(UserNumber, cpuNumber);
+    console.log(total);
 });
