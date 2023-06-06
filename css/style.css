@@ -7,3 +7,51 @@
 }
 
 /* Genereics */
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(170, 79, 255);
+}
+
+p{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+select,
+input{
+    border: none;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+/* main content */
+
+#palindroma,
+#EoO{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin: 200px auto;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 500px;
+    height: 200px;
+}
+
+/* utility */
+
+.m-1{
+    margin-top: 10px;
+}
