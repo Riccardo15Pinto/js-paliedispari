@@ -31,4 +31,12 @@ buttonElement.addEventListener('click', function(){
     //creo una variabile d'appoggio
     let result = 'La Parola non è Palindroma'
 
+    //se la rimane uguale
+    if(wordresult === revertwords){
+        result = 'La parola è Palindroma'
+    } 
+
+    //stampo in pagina
+    textElement.innerText = result;
+
 });
