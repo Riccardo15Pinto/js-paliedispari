@@ -78,4 +78,10 @@ startElement.addEventListener('click' , function(){
     //recupero valore numerico inserito dall'utente
     const UserNumber = parseInt(numberElement.value);
     console.log(UserNumber);
+
+    //faccio un controllo
+    if(UserNumber > 5){
+        alert('Inserire un numero inferiore a 5');
+        return
+    }
 });
