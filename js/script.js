@@ -74,14 +74,15 @@ startElement.addEventListener('click' , function(){
 
     //recupero valore pari o dispari
     const Userchoice = choiceElement.value;
+    console.log(Userchoice);
 
     //recupero valore numerico inserito dall'utente
     const UserNumber = parseInt(numberElement.value);
     console.log(UserNumber);
 
     //faccio un controllo
-    if(UserNumber > 5){
-        alert('Inserire un numero inferiore a 5');
+    if(isNaN(Userchoice) || isNaN(UserNumber) || UserNumber < 1 || UserNumber > 5){
+        alert('Inserisci i dati correttamente');
         return
     }
 
