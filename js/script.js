@@ -73,7 +73,7 @@ function getEvenOrOdd(a , b){
 startElement.addEventListener('click' , function(){
 
     //recupero valore pari o dispari
-    const Userchoice = choiceElement.value;
+    const Userchoice = parseInt(choiceElement.value);
     console.log(Userchoice);
 
     //recupero valore numerico inserito dall'utente
@@ -96,17 +96,24 @@ startElement.addEventListener('click' , function(){
     //creo una variabile sfruttando la funzione
     const total = getEvenOrOdd(UserNumber, cpuNumber);
     console.log(total);
-
+    
     //variabile d'appoggio
-    let testresult = 'Ha vinto il dispari';
+    let testresult;
 
-    //faccio un controllo
-    if(Userchoice == total){
-        testresult = 'Ha vinto il pari';
+    if(Userchoice === 0 && Userchoice === total ){
+        testresult = 'Hai scelto pari:Hai vinto ' + '  ' + 'Numero CPU:' + ' ' + cpuNumber;
+    }else if(Userchoice === 1 && Userchoice === total){
+        testresult = 'Hai scelto dispari:Hai vinto ' + '  ' + 'Numero CPU:' + ' ' + cpuNumber;
+    }else if (Userchoice === 0 && Userchoice != total ){
+        testresult = 'Hai scelto pari:Hai Perso ' + '  ' + 'Numero CPU:' + ' ' + cpuNumber;
+    }else if(Userchoice === 1 && Userchoice != total){
+        testresult = 'Hai scelto dispari:Hai Perso ' + '  ' + 'Numero CPU:' + ' ' + cpuNumber;
     }
 
     //stampo in pagina
     console.log(testresult);
-    testElement.innerText = testresult + ': Numero estratto per il computer: ' + cpuNumber;
+
+    testElement.innerText = testresult;
+
 
 });
