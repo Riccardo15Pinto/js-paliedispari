@@ -17,4 +17,10 @@ buttonElement.addEventListener('click', function(){
     //recupero il valore inserito dall'utente
     const wordresult = resultElement.value.trim();
     console.log(wordresult.length);
+
+    //faccio un controllo
+    if(wordresult.length <= 1){
+        alert('I Caratteri inseriti non sono sufficienti');
+        return
+    }
 });
