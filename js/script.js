@@ -55,3 +55,21 @@ const choiceElement = document.getElementById('user-choice');
 const numberElement = document.getElementById('number-user');
 const startElement = document.getElementById('start-button');
 const testElement = document.getElementById('result-test');
+
+//creo una funzione che genera  umero random(1 a 5)
+function getRandomNumber(){
+    const random = Math.floor(Math.random() * 5) + 1;
+    return random;
+}
+
+//creo una funzione somma due risultati e ne fa il modulo di 2
+function getEvenOrOdd(a , b){
+    const evenOroddresult = a + b;
+    const Evenresult = evenOroddresult % 2;
+    return Evenresult;
+}
+
+//al click del bottone
+startElement.addEventListener('click' , function(){
+    
+});
